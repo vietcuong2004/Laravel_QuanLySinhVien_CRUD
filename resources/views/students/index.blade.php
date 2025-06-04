@@ -14,8 +14,8 @@
     <h1 class="text-primary mt-3 mb-4 text-center"><b>Quản lý sinh viên</b></h1>
 </div>
 
-<div class="Studentd">
-    <div class="Studentd-header">
+<div class="card">
+    <div class="card-header">
         <div class="row">
             <div class="col col-md-6"><b></b></div>
             <div class="col col-md-6">
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="Studentd-body">
+    <div class="card-body">
         <table class="table table-bordered">
             <tr>
                 <th>Mã sinh viên</th>
