@@ -15,7 +15,7 @@ return new class extends Migration
             $table->integerIncrements('StudentID');
             $table->string('StudentName');
             $table->string('StudentEmail');
-            $table->enum('StudentGender', ['0','1']);
+            $table->enum('StudentGender', ['0','1','3']);
             $table->unsignedInteger('FK_ClassroomID');
             $table->foreign('FK_ClassroomID')->references('ClassroomID')->on('Classrooms')->onDelete('cascade');
         });

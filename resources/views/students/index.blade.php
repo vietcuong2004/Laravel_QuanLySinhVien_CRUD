@@ -41,7 +41,12 @@
                         <td>{{ $row->StudentID }}</td>
                         <td>{{ $row->StudentName }}</td>
                         <td>{{ $row->StudentEmail }}</td>
-                        <td> @if($row->StudentGender==0) Nam @else Nữ @endif</td>
+                        <td>
+                            @if($row->StudentGender==0) Nam 
+                            @elseif($row->StudentGender==1) Nữ 
+                            @else Khác 
+                            @endif
+                        </td>
                         <td>{{ $row->Classroom->ClassroomName }}</td>
                         <td>
                             <form action="{{ route('students.destroy', $row->StudentID) }}" method="post" id="delete-form-{{ $row->StudentID }}">

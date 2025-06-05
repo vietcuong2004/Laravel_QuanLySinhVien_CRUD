@@ -37,10 +37,13 @@
         <div class="row mb-3">
             <label class="col-sm-2 col-label-form"><b>Giới tính</b></label>
             <div class="col-sm-10">
-                {{ $Student->StudentGender == 0 ? 'Nam' : 'Nữ' }}
+                @if($Student->StudentGender == 0) Nam 
+                @elseif($Student->StudentGender == 1) Nữ 
+                @else Khác 
+                @endif
             </div>
         </div>
-
+        
         <div class="row mb-3">
             <label class="col-sm-2 col-label-form"><b>Lớp</b></label>
             <div class="col-sm-10">

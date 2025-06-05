@@ -39,6 +39,7 @@
                         <select name="StudentGender" class="form-control" required>
                             <option value="0">Nam</option>
                             <option value="1">Nữ</option>
+                            <option value="3">Khác</option>
                         </select>
                     </div>
                 </div>
@@ -50,8 +51,8 @@
                             <option value="">-- Chọn lớp --</option>
                             @foreach ($Classrooms as $Classroom)
                                 <option value="{{ $Classroom->ClassroomID }}">{{ $Classroom->ClassroomName }}</option>
-                            @endforeach
-                        </select>
+                        @endforeach
+                    </select>
                     </div>
                 </div>
 

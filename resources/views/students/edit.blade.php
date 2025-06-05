@@ -40,6 +40,7 @@
                         <select name="StudentGender" class="form-control" required>
                             <option value="0" @if($Student->StudentGender == 0) selected @endif>Nam</option>
                             <option value="1" @if($Student->StudentGender == 1) selected @endif>Nữ</option>
+                            <option value="3" @if($Student->StudentGender == 3) selected @endif>Khác</option>
                         </select>
                     </div>
                 </div>
