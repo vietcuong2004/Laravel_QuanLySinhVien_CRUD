@@ -23,14 +23,16 @@
                 <div class="row mb-3">
                     <label class="col-sm-2 col-label-form">Tên sinh viên</label>
                     <div class="col-sm-10">
-                        <input type="text" name="StudentName" class="form-control" value="{{ old('StudentName', $Student->StudentName) }}" required>
+                        <input type="text" name="StudentName" class="form-control"
+                            value="{{ old('StudentName', $Student->StudentName) }}" required>
                     </div>
                 </div>
 
                 <div class="row mb-3">
                     <label class="col-sm-2 col-label-form">Email</label>
                     <div class="col-sm-10">
-                        <input type="email" name="StudentEmail" class="form-control" value="{{ old('StudentEmail', $Student->StudentEmail) }}" required>
+                        <input type="email" name="StudentEmail" class="form-control"
+                            value="{{ old('StudentEmail', $Student->StudentEmail) }}" required>
                     </div>
                 </div>
 
@@ -51,7 +53,8 @@
                         <select name="FK_ClassroomID" class="form-control" required>
                             <option value="">-- Chọn lớp --</option>
                             @foreach ($Classrooms as $Classroom)
-                                <option value="{{ $Classroom->ClassroomID }}" @if($Student->FK_ClassroomID == $Classroom->ClassroomID) selected @endif>
+                                <option value="{{ $Classroom->ClassroomID }}"
+                                    @if($Student->FK_ClassroomID == $Classroom->ClassroomID) selected @endif>
                                     {{ $Classroom->ClassroomName }}
                                 </option>
                             @endforeach
@@ -59,7 +62,9 @@
                     </div>
                 </div>
 
+
                 <div class="text-center">
+                    <a href="{{ route('students.index') }}" class="btn btn-secondary">Quay lại</a>
                     <input type="submit" class="btn btn-primary" value="Cập nhật" />
                 </div>
             </form>

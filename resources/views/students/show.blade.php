@@ -51,7 +51,11 @@
             </div>
         </div>
 
-        <a href="{{ route('students.index') }}" class="btn btn-secondary">Quay lại</a>
+
+        <div class="text-center">
+            <a href="{{ route('students.index') }}" class="btn btn-secondary">Quay lại</a>
+        </div>
+        
     </div>
 </div>
 
