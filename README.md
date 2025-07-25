@@ -1,11 +1,10 @@
 # 📚 Code Laravel CRUD Quản Lý Sinh Viên
 
 ## 🚀 Cách chạy dự án
-
 - Mở Terminal và chạy lệnh:
   ```bash
   php artisan serve
-
+  ```
 - Mở XAMPP và truy cập đường dẫn sau bằng trình duyệt: http://127.0.0.1:8000/students
 
 ## 🖥️ Giao diện và chức năng
