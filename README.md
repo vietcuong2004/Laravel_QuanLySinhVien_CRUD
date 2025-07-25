@@ -1,5 +1,5 @@
 <div align="center">
-📚 Code Laravel CRUD Quản Lý Sinh Viên 📚
+<b>📚 Code Laravel CRUD Quản Lý Sinh Viên 📚</b>
 </div>
 
 ## 🚀 Cách chạy dự án
